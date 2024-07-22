@@ -35,7 +35,7 @@
 
 ![Запущенный Докер](https://github.com/user-attachments/assets/0871e752-573b-4014-8733-02c716bcc5cd)
 
-На данном скриншоте представлен зарегистрированный акаунт на сайте https://hub.docker.com/
+На данном скриншоте представлен зарегистрированный аккаунт на сайте https://hub.docker.com/
 
 ![Акаунт](https://github.com/user-attachments/assets/877c246f-3baa-4b36-9c34-f3aa4dfe83d6)
 
