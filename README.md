@@ -142,6 +142,11 @@ resource "docker_container" "nginx" {
 }
 ```
 
+Вывод команды ```docker ps``` представлен на скриншоте ниже:
+
+![контейнер](https://github.com/user-attachments/assets/09109ba1-35b3-459e-8117-ce9e87e3e849)
+
+
 
 
 
