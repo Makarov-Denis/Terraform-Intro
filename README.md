@@ -199,6 +199,9 @@ Docker-образ nginx:latest не был удален, потому что Ter
 
 https://docs.comcloud.xyz/providers/kreuzwerker/docker/latest/docs/resources/image
 
+keep_locally (логическое значение) Если значение true, то изображение Docker не будет удалено при операции destroy.
+Если значение false, то изображение будет удалено из локального хранилища docker при операции destroy.
+
 Строчка из документации представлена на скриншоте ниже:
 
 ![ответ](https://github.com/user-attachments/assets/2a57d057-613f-4041-a961-1100eb3e975d)
