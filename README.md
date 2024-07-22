@@ -79,6 +79,35 @@ terraform plan и terraform init
 
 Из данного скриншота мы видим, что секретная информация хранится в **personal.auto.tfvars**
 
+### Выполнение задания 1.3
+
+Выполните код проекта. Найдите  в state-файле секретное содержимое созданного ресурса **random_password**, пришлите в качестве ответа конкретный ключ и его значение.
+
+Для выполнения данного задания использовались команды 
+
+```
+
+terraform plan и terraform apply -auto-approve
+
+```
+Результат выполнения команд и файл **terraform.tfstate** представлены на скриншотах ниже:
+
+![проверка](https://github.com/user-attachments/assets/1f0140c7-b46e-411b-b6ef-794f76cb33b9)
+
+![Плай](https://github.com/user-attachments/assets/a9e35bc7-e4ef-4dc1-848e-81b8f5b53dd9)
+
+На данном скриншоте выделен ключ
+![Ключ](https://github.com/user-attachments/assets/384adf7f-be73-4c5a-8bc4-d445b769c511)
+
+
+
+
+
+
+
+
+
+
 
 
 
