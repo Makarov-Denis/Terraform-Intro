@@ -96,8 +96,52 @@ terraform plan и terraform apply -auto-approve
 
 ![Плай](https://github.com/user-attachments/assets/a9e35bc7-e4ef-4dc1-848e-81b8f5b53dd9)
 
-На данном скриншоте выделен ключ
+На данном скриншоте выделен ключ в поле Result
 ![Ключ](https://github.com/user-attachments/assets/384adf7f-be73-4c5a-8bc4-d445b769c511)
+
+### Выполнение задания 1.4
+
+Раскомментируйте блок кода, примерно расположенный на строчках 29–42 файла **main.tf**.
+Выполните команду ```terraform validate```. Объясните, в чём заключаются намеренно допущенные ошибки. Исправьте их.
+
+При проверке файла **main.tf** были обнаружены следующие ошибки:
+
+  - "docker_image" - ресурсу не было назначено имя;
+  - "docker_container" - имя контайнера начиналось с цифры 1, что не допустимо в названиях Docker containers.
+
+Ошибка при запуске представлена на скриншоте ниже:
+
+![ошибка](https://github.com/user-attachments/assets/80a5f337-9948-4f1d-82dc-a02b65854b11)
+
+Были внесены исправления.
+
+Результат выполнения представлен на скриншоте ниже:
+
+![выполнение](https://github.com/user-attachments/assets/23be27cc-3578-4ac4-8560-a04f34f05dcf)
+
+### Выполнение задания 1.5
+
+Выполните код. В качестве ответа приложите: исправленный фрагмент кода и вывод команды ```docker ps```.
+
+Исправленный код представлен ниже:
+
+```
+resource "docker_image" "nginx" {
+  name         = "nginx:latest"
+  keep_locally = true
+}
+
+resource "docker_container" "nginx" {
+  image = docker_image.nginx.image_id
+  name  = "example_${random_password.random_string.result}"
+
+  ports {
+    internal = 80
+    external = 9090
+  }
+}
+```
+
 
 
 
