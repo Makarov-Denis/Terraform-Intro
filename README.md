@@ -193,6 +193,15 @@ terraform destroy -auto-approve
 
 Объясните, почему при этом не был удалён docker-образ **nginx:latest**. Ответ **ОБЯЗАТЕЛЬНО НАЙДИТЕ В ПРЕДОСТАВЛЕННОМ КОДЕ**, а затем **ОБЯЗАТЕЛЬНО ПОДКРЕПИТЕ** строчкой из документации [**terraform провайдера docker**](https://docs.comcloud.xyz/providers/kreuzwerker/docker/latest/docs).
 
+### Ответ
+
+Docker-образ nginx:latest не был удален, потому что Terraform управляет контейнерами, а не образами. Образы остаются в системе, чтобы их можно было использовать повторно.
+
+https://docs.comcloud.xyz/providers/kreuzwerker/docker/latest/docs/resources/image
+
+Строчка из документации представлена на скриншоте ниже:
+
+![ответ](https://github.com/user-attachments/assets/2a57d057-613f-4041-a961-1100eb3e975d)
 
 
 
