@@ -96,7 +96,7 @@ terraform plan и terraform apply -auto-approve
 
 ![Плай](https://github.com/user-attachments/assets/a9e35bc7-e4ef-4dc1-848e-81b8f5b53dd9)
 
-На данном скриншоте выделен ключ в поле Result
+На данном скриншоте выделен найденный ключ в поле "Result"
 ![Ключ](https://github.com/user-attachments/assets/384adf7f-be73-4c5a-8bc4-d445b769c511)
 
 ### Выполнение задания 1.4
